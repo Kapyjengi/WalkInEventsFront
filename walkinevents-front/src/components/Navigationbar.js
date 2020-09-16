@@ -1,0 +1,20 @@
+import React from 'react'
+import Navbar from 'react-bootstrap/Navbar'
+import { Nav } from 'react-bootstrap';
+
+const Navigationbar = () => {
+
+    return (
+        <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+            <Navbar.Brand href="#home">WalkInEvents</Navbar.Brand>
+            <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+            <Navbar.Collapse id="responsive-navbar-nav">
+                <Nav className="mr-auto">
+                    <Nav.Link href="#link">Link</Nav.Link>
+                </Nav>
+            </Navbar.Collapse>
+        </Navbar>
+    )
+}
+
+export default Navigationbar
